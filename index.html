@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iron Man Fan Site</title>
+  <link rel="icon" href="OIP (1).jpg">
+  <style>
+    /* General styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #2c3e50; /* New background color */
+      color: #ecf0f1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    header, section, footer {
+      width: 100%;
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #34495e;
+    }
+
+    header {
+      text-align: center;
+      color: #e74c3c;
+    }
+
+    header h1 {
+      font-size: 3rem;
+    }
+
+    .container {
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+    .welcome-section {
+      background-color: #34495e;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* Iron Man & Stark sections */
+    .ironman-section, .stark-section {
+      background-color: #2c3e50;
+    }
+
+    h2 {
+      color: #3498db;
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    /* Section Images */
+    .ironman-section img, .stark-section img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 20px auto;
+      border-radius: 8px;
+    }
+
+    /* Form Section */
+    form {
+      background-color: #34495e;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #555;
+      background-color: #ecf0f1;
+      color: #2c3e50;
+    }
+
+    form button {
+      width: 100%;
+      padding: 12px;
+      background-color: #e74c3c;
+      color: #ecf0f1;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.1rem;
+    }
+
+    form button:hover {
+      background-color: #c0392b;
+    }
+
+    /* Footer Section */
+    footer {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #34495e;
+      padding: 20px;
+      color: #ecf0f1;
+      text-align: center;
+    }
+
+    footer a {
+      color: #e74c3c;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #c0392b;
+    }
+
+    footer p {
+      margin: 5px;
+    }
+
+    /* Responsive Design */
+    @media screen and (max-width: 768px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+
+      h2 {
+        font-size: 1.8rem;
+      }
+
+      form {
+        padding: 15px;
+      }
+
+      form input, form textarea, form button {
+        padding: 8px;
+        font-size: 1rem;
+      }
+
+      footer {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      footer .container {
+        width: 100%;
+        text-align: center;
+      }
+
+      footer iframe {
+        width: 100%;
+        height: 150px;
+        border-radius: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Welcome to the Iron Man Fan Site</h1>
+</header>
+
+<section class="welcome-section">
+  <div class="container">
+    <p>Hello, Iron Man Fan! Let's explore the incredible world of Tony Stark and his heroic alter ego, Iron Man!</p>
+  </div>
+</section>
+
+<section id="about-ironman" class="ironman-section">
+  <h2>About Iron Man</h2>
+  <img src="OIP.jpg" alt="Iron Man">
+  <div class="container">
+    <p>Iron Man, also known as Tony Stark, is a genius billionaire playboy philanthropist who uses his intellect and resources to create advanced technology and suit up as the armored superhero Iron Man.</p>
+    <p>His journey from a weapons manufacturer to a selfless hero is inspiring and showcases his relentless drive to protect the world.</p>
+    <p>With his iconic red and gold suit, Iron Man has become a symbol of innovation, courage, and resilience.</p>
+  </div>
+</section>
+
+<section id="stark" class="stark-section">
+  <h2>About Tony Stark</h2>
+  <img src="OIP (2).jpg" alt="Tony Stark">
+  <div class="container">
+    <p>Tony Stark is the brilliant mind behind Stark Industries and the creator of the Iron Man suit. His intelligence, charisma, and determination have made him a beloved character in the Marvel Universe.</p>
+    <p>Despite facing numerous challenges and personal struggles, Tony's commitment to justice and his willingness to sacrifice for the greater good define his legacy.</p>
+    <p>The future of Iron Man's legacy continues to inspire fans around the world.</p>
+  </div>
+</section>
+
+<section id="contact-form-section">
+  <h2>Write a Message to Iron Man</h2>
+  <form id="contact-form">
+    <label for="entername">Name:</label>
+    <input id="entername" type="text" placeholder="Enter your name" required>
+
+    <label for="enteremail">Email:</label>
+    <input id="enteremail" type="email" placeholder="Enter your email" required>
+
+    <label for="enterphone">Phone Number:</label>
+    <input id="enterphone" type="tel" placeholder="Enter your phone number" required>
+
+    <label for="entermessage">Message:</label>
+    <textarea id="entermessage" rows="4" placeholder="Write your message to Iron Man" required></textarea>
+
+    <button type="submit" id="submitname">Send Message</button>
+    <button type="button" id="forgetname">Forget Me</button>
+  </form>
+</section>
+
+<footer>
+  <!-- Left: Section Links -->
+  <div>
+    <p>
+      <a href="#about-ironman">About Iron Man</a>
+      <a href="#stark">About Tony Stark</a>
+      <a href="#contact-form-section">Contact Iron Man</a>
+    </p>
+  </div>
+
+  <!-- Center: Copyright Message -->
+  <div>
+    <p>&copy; 2024 Iron Man Fan Site</p>
+  </div>
+
+  <!-- Right: Google Maps Embed -->
+  <div>
+    <iframe
+      src="
+      https://www.google.com/maps/embed/v1/place?q=+++Dume+State+Beach+Malibu,+California&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+      height="150" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy"
+      title="Stark Industries HQ Location">
+    </iframe>
+  </div>
+</footer>
+
+<script src="index.js" defer></script>
+
+</body>
+</html>
